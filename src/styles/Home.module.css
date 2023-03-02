@@ -113,7 +113,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
+  width: 200px;
   height: 75px;
   padding: 25px 10px;
   margin-left: 16px;
@@ -133,8 +133,8 @@
 /* Conic Gradient Animation */
 .thirteen::before {
   animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
+  width: 300%;
+  height: 300%;
   background: var(--tile-border);
 }
 
@@ -259,12 +259,12 @@
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+    /* filter: invert(1); */
   }
 
   .logo,
   .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    /* filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70); */
   }
 }
 

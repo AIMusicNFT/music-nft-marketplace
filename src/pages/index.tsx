@@ -17,8 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
+            Get started with AI
           </p>
           <div>
             <a
@@ -28,11 +27,11 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src="/vercel.svg"
+                src="/aimusicnft.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={40}
+                height={40}
                 priority
               />
             </a>
@@ -40,20 +39,12 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
           <div className={styles.thirteen}>
             <Image
-              src="/thirteen.svg"
+              src="/logo.svg"
               alt="13"
-              width={40}
-              height={31}
+              width={187}
+              height={57}
               priority
             />
           </div>
@@ -61,16 +52,16 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              Create Now <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              Instantly create your own music NFT with AI and trade now!
             </p>
           </a>
 
@@ -81,10 +72,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+              About <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              Learn about AI Music NFT in an interactive course with&nbsp;quizzes!
             </p>
           </a>
 
@@ -95,25 +86,24 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+              Team <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              Discover and know more about our team.
             </p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+              How it works? <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              Find in-depth information about AI Music NFT Marketplace features.
             </p>
           </a>
         </div>

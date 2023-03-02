@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="230px" height="120px" viewBox="0 0 230 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <pattern id="pattern-1" width="100%" height="100%" patternUnits="objectBoundingBox">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="40" height="40" xlink:href="data:image/png;base64,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"></image>
+        <circle id="path-3" cx="169" cy="29" r="20"></circle>
+        <filter x="-160.0%" y="-140.0%" width="420.0%" height="420.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.283998793   0 0 0 0 0.0328412501   0 0 0 0 0.0978467319  0 0 0 0.152731302 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-154.000000, -204.000000)">
+            <g id="Group" transform="translate(155.000000, 227.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="url(#pattern-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <text id="AIMusi" font-family="Phosphate-Inline, Phosphate" font-size="48" font-weight="normal" fill="#354362">
+                    <tspan x="0" y="45">AIMusi</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
