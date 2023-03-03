@@ -9,44 +9,35 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AI Music NFT marketplace</title>
-        <meta name="description" content="AI Music NFT marketplace - where you can create amazing music NFT with AI and trade your NFT with music lovers around the world!" />
+        <title>Nota - An AI Music NFT marketplace</title>
+        <meta name="description" content="Nota - An AI Music NFT marketplace where you can create amazing music NFT with AI and trade your NFT with music lovers around the world!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
-            Get started with AI
-          </p>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
               <Image
-                src="/aimusicnft.svg"
+                src="/logo.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={40}
                 height={40}
                 priority
               />
+               Nota
             </a>
           </div>
         </div>
 
         <div className={styles.center}>
           <div className={styles.thirteen}>
-            <Image
-              src="/logo.svg"
-              alt="13"
-              width={187}
-              height={57}
-              priority
-            />
+            <p>Mint Music NFT</p>
           </div>
         </div>
 
