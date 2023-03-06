@@ -43,20 +43,6 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Create Now <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly create your own music NFT with AI and trade now!
-            </p>
-          </a>
-
-          <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
@@ -85,8 +71,8 @@ export default function Home() {
           </a>
 
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            href="https://www.riffusion.com/about"
+            className={styles.card}  
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,7 +80,7 @@ export default function Home() {
               How it works? <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about AI Music NFT Marketplace features.
+              Find in-depth information about AI Music NFT features.
             </p>
           </a>
         </div>
