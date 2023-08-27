@@ -251,8 +251,9 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <footer>
+        <footer className="flex flex-col items-center justify-center">
           <div>Copyright © Nota</div>
+          <div>Powered by Jomosis & Chacha</div>
         </footer>
       </main>
     </>
