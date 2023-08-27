@@ -11,6 +11,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
+  Progress,
   Radio,
   RadioGroup,
   Select,
@@ -18,9 +19,9 @@ import {
   Textarea,
 } from "@nextui-org/react";
 //import * as tezosCrypto from "@tezos-core-tools/crypto-utils";
+import { Image } from "@nextui-org/react";
 import { Web3Auth } from "@web3auth/modal";
 import Head from "next/head";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
   const [loggedIn, setLoggedIn] = useState(false);
   //const [provider, setProvider] = useState<SafeEventEmitterProvider | null>(null);
   const [value, setValue] = React.useState();
+  const [musicProgress, setMusicProgress] = React.useState(0);
 
   const initModal = async () => {
     //Initialize within your constructor
@@ -47,8 +49,20 @@ export default function Home() {
     await web3auth?.initModal();
   };
 
+  const playMusic = async () => {
+    const interval = setInterval(() => {
+      setMusicProgress((v) => (v >= 100 ? 0 : v + 10));
+    }, 500);
+
+    return () => clearInterval(interval);
+  };
+
   useEffect(() => {
     initModal();
+  }, []);
+
+  React.useEffect(() => {
+    playMusic();
   }, []);
 
   const handleWeb3Modal = async () => {
@@ -57,6 +71,10 @@ export default function Home() {
       if (web3auth?.connected) {
         /* const web3authProvider = await web3auth.connect();
       setProvider(web3authProvider);*/
+        const privateKey = await web3auth?.provider?.request({
+          method: "eth_private_key",
+        });
+        console.log(privateKey);
         setLoggedIn(true);
       }
     } catch (error) {
@@ -129,7 +147,12 @@ export default function Home() {
           <p className="text-2xl">Create an AI Music NFT</p>
           <div className="container mt-5 flex gap-16">
             <div className="container mx-auto flex-1">
-              <p className="text-sm">Cover</p>
+              <p className="text-sm mb-2">Cover</p>
+              <Image
+                width={300}
+                alt="NextUI hero Image"
+                src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
+              />
               <p className="text-lg mt-5">Details</p>
               <p className="text-sm mt-5">Name</p>
               <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
@@ -203,19 +226,34 @@ export default function Home() {
             <Card className="w-96 h-fit">
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-lg mt-5 py-4">Preview</p>
-                <div className="bg-orange-50 w-full h-96 flex items-center justify-center">
-                  Cover
+                <div className="bg-orange-50 w-full flex items-center justify-center">
+                  <Image
+                    width="100%"
+                    alt="NextUI hero Image"
+                    src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
+                  />
                 </div>
                 <p className="text-sm py-3">
                   Rock Star
                   <span className="text-xs"> / pop</span>
                 </p>
                 {/* <ReactPlayer url="/the-wires.mp3" /> */}
+                <Progress
+                  aria-label="Downloading..."
+                  size="md"
+                  value={musicProgress}
+                  color="success"
+                  showValueLabel={false}
+                  className="max-w-md"
+                />
               </CardHeader>
               <CardBody className="overflow-visible py-2"></CardBody>
             </Card>
           </div>
         </div>
+        <footer>
+          <div>Copyright © Nota</div>
+        </footer>
       </main>
     </>
   );
